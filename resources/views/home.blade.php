@@ -11,10 +11,11 @@
             <nav class="hidden items-center gap-8 text-sm font-medium text-brown-700 md:flex">
                 <a href="#about" class="transition hover:text-amber-800">О нас</a>
                 <a href="#menu" class="transition hover:text-amber-800">Меню</a>
-                <a href="#contact" class="transition hover:text-amber-800">Контакты</a>
+                <a href="#map" class="transition hover:text-amber-800">Как нас найти</a>
+                <a href="/admin/orders" class="transition hover:text-amber-800 text-xs opacity-60 hover:opacity-100">⚙️</a>
             </nav>
-            <a href="#menu" class="rounded-full bg-amber-800 px-5 py-2.5 text-sm font-semibold text-cream shadow-sm transition hover:bg-amber-900">
-                Заказать
+            <a href="{{ route('order.create') }}" class="rounded-full bg-amber-800 px-5 py-2.5 text-sm font-semibold text-cream shadow-sm transition hover:bg-amber-900">
+                Сделать заказ
             </a>
         </div>
     </header>
@@ -43,7 +44,7 @@
                         <a href="#menu" class="rounded-full bg-amber-800 px-8 py-3.5 font-semibold text-cream shadow-md transition hover:bg-amber-900 hover:shadow-lg">
                             Смотреть меню
                         </a>
-                        <a href="#contact" class="rounded-full border border-brown-300 bg-white/60 px-8 py-3.5 font-semibold text-brown-800 transition hover:border-amber-400 hover:bg-white">
+                        <a href="#map" class="rounded-full border border-brown-300 bg-white/60 px-8 py-3.5 font-semibold text-brown-800 transition hover:border-amber-400 hover:bg-white">
                             Как нас найти
                         </a>
                     </div>
@@ -138,9 +139,34 @@
                 <p class="mx-auto mt-4 max-w-xl text-amber-100">
                     Торты, пироги и наборы выпечки на заказ — примем заявку за 48 часов.
                 </p>
-                <a href="#contact" class="mt-8 inline-block rounded-full bg-cream px-8 py-3.5 font-semibold text-amber-900 transition hover:bg-white">
-                    Оставить заявку
+                <a href="{{ route('order.create') }}" class="mt-8 inline-block rounded-full bg-cream px-8 py-3.5 font-semibold text-amber-900 transition hover:bg-white">
+                    Сделать заказ
                 </a>
+            </div>
+        </section>
+
+        {{-- Map section --}}
+        <section id="map" class="scroll-mt-20 pb-20 md:pb-28">
+            <div class="mx-auto max-w-6xl px-6">
+                <div class="text-center mb-10">
+                    <h2 class="font-display text-3xl font-semibold text-brown-900 md:text-4xl">Как нас найти</h2>
+                    <p class="mt-3 text-brown-600">Ждём вас ежедневно с 6:00 до 21:00</p>
+                </div>
+                <div class="rounded-3xl overflow-hidden border border-brown-200/80 shadow-lg">
+                    <iframe 
+                        src="https://yandex.ru/map-widget/v1/?ll=53.211649,56.861393&z=17&pt=53.211649,56.861393&l=map"
+                        width="100%" 
+                        height="450" 
+                        frameborder="0"
+                        allowfullscreen="true"
+                        loading="lazy"
+                        class="pointer-events-auto">
+                    </iframe>
+                </div>
+                <div class="mt-6 text-center">
+                    <p class="text-brown-700 font-medium">📍 г. Ижевск, ул. Пекарская, 12</p>
+                    <p class="text-brown-500 text-sm mt-1">Остановка "Центральная", вход с ул. Хлебной</p>
+                </div>
             </div>
         </section>
     </main>
