@@ -19,12 +19,12 @@
                         <h1 class="text-xl font-semibold text-gray-800">Админ-панель</h1>
                         <a href="{{ route('admin.products.index') }}" class="text-gray-600 hover:text-amber-600">📦 Товары</a>
                         <a href="{{ route('admin.orders.index') }}" class="text-amber-600 font-medium">📋 Заказы</a>
+                        <a href="{{ route('admin.reviews.index') }}" class="text-gray-600 hover:text-amber-600">💬 Отзывы</a>
                     </div>
                     <a href="/" class="text-amber-600 hover:text-amber-700">На сайт →</a>
                 </div>
             </div>
         </nav>
-
         <main class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center mb-6">
                 <h2 class="text-2xl font-semibold text-gray-800">Управление заказами</h2>

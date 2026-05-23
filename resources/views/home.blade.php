@@ -12,7 +12,8 @@
                 <a href="#about" class="transition hover:text-amber-800">О нас</a>
                 <a href="#menu" class="transition hover:text-amber-800">Меню</a>
                 <a href="#map" class="transition hover:text-amber-800">Как нас найти</a>
-                <a href="/admin/orders" class="transition hover:text-amber-800 text-xs opacity-60 hover:opacity-100">⚙️</a>
+                <a href="/reviews" class="transition hover:text-amber-800">Отзывы</a>
+                <a href="/admin/orders" target="_blank" class="transition text-amber-700 hover:text-amber-900 border border-amber-300 px-3 py-1 rounded-full text-xs">⚙️</a>
             </nav>
             <a href="{{ route('order.create') }}" class="rounded-full bg-amber-800 px-5 py-2.5 text-sm font-semibold text-cream shadow-sm transition hover:bg-amber-900">
                 Сделать заказ

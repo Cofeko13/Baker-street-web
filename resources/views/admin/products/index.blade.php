@@ -14,8 +14,9 @@
                 <div class="flex justify-between h-16 items-center">
                     <div class="flex gap-8">
                         <h1 class="text-xl font-semibold text-gray-800">Админ-панель</h1>
-                        <a href="{{ route('admin.products.index') }}" class="text-gray-600 hover:text-amber-600">📦 Товары</a>
-                        <a href="{{ route('admin.orders.index') }}" class="text-amber-600 font-medium">📋 Заказы</a>
+                        <a href="{{ route('admin.products.index') }}" class="text-amber-600 font-medium">📦 Товары</a>
+                        <a href="{{ route('admin.orders.index') }}" class="text-gray-600 hover:text-amber-600">📋 Заказы</a>
+                        <a href="{{ route('admin.reviews.index') }}" class="text-gray-600 hover:text-amber-600">💬 Отзывы</a>
                     </div>
                     <a href="/" class="text-amber-600 hover:text-amber-700">На сайт →</a>
                 </div>
